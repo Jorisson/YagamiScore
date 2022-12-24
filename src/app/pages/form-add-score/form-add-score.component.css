@@ -1,0 +1,5 @@
+.validation-error p{
+  color: red;
+  text-align: center;
+  border-left: 3px solid red;
+}

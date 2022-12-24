@@ -1,0 +1,15 @@
+<div class="container">
+  <form>
+    <div class="titulo">
+      <h1>Ranking - Maiores pontuações</h1>
+    </div>
+    <ol>
+      <li *ngFor="let player of ranking">
+        <div class="form-group">
+          <a routerLink="/player">{{player.st_nome}}</a>
+          <label for="playerPoints">{{player.nr_pontuacao}} Pontos</label>
+        </div>
+      </li>
+    </ol>
+  </form>
+</div>

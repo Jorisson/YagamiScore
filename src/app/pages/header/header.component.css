@@ -1,0 +1,57 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #993399;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+.logo{
+  font-size: 20px;
+  animation: piscaPisca 5s infinite;
+  font-weight: bold;
+  font-family: fantasy;
+}
+@keyframes piscaPisca{
+  0% {color: white;}
+  10% {color: white;}
+  15% {color: #993399;}
+  20% {color: #993399;}
+  25% {color: white;}
+  30% {color: white;}
+  35% {color: #993399;}
+  40% {color: #993399;}
+  45% {color: white;}
+  50% {color: white;}
+  55% {color: #993399;}
+  60% {color: #993399;}
+  65% {color: white;}
+  70% {color: white;}
+  75% {color: #993399;}
+  80% {color: #993399;}
+  85% {color: white;}
+  90% {color: white;}
+  95% {color: #993399;}
+  100% {color: #993399;}
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
