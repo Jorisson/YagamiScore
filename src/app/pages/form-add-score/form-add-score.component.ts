@@ -45,6 +45,8 @@ export class FormAddScoreComponent implements OnInit {
     }
     await this.pontuacaoService.createPontuacao(this.pontuacaoForm.value).subscribe();
     this.mensagemService.add('Pontuação adicionada com Sucesso!')    
-    this.router.navigate(['/ranking']);
+    setTimeout(()=>{
+      this.router.navigate(['/ranking']);
+    }, 4000);
   }
 }

@@ -12,10 +12,10 @@ import { PontuacaoService } from '../../services/pontuacao.service'
 export class PageRankingComponent implements OnInit{
   ranking: Pontuacao[] = [];
   
-  constructor(private pontuacaoService: PontuacaoService){
+  constructor(private pontuacaoService: PontuacaoService){}
+  ngOnInit(): void{
     this.getPontuacao();
   }
-  ngOnInit(): void{}
 
   getPontuacao(): void{
     this.pontuacaoService.getAll().subscribe((ranking)=> (this.ranking = ranking));
