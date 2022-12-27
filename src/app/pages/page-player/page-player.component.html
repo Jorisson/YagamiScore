@@ -1,8 +1,37 @@
 <div class="container">
   <form>
     <div class="titulo">
-      <h1>Estatísticas do jogador - {{player.name}}</h1>
+      <h1>Estatísticas do jogador - {{st_nome}}</h1>
+      <div class="botao_fechar">
+        <button class="close" routerLink="/ranking">
+          <fa-icon [icon]="faClose"></fa-icon>
+        </button>
+      </div>
     </div>
     
+    <div class="form-group">
+      <label>Partidas jogadas:</label>
+      <label>{{player.nr_jogadas}}</label>
+    </div>
+    <div class="form-group">
+      <label>Média de pontuação:</label>
+      <label>{{player.nr_media_pont}}</label>
+    </div>
+    <div class="form-group">
+      <label>Maior pontuação:</label>
+      <label>{{player.nr_maior_pont}}</label>
+    </div>
+    <div class="form-group">
+      <label>Menor pontuação:</label>
+      <label>{{player.nr_menor_pont}}</label>
+    </div>
+    <div class="form-group">
+      <label>Quantidade de vezes que bateu o próprio recorde:</label>
+      <label>{{player.nr_qtd_recorde}}</label>
+    </div>
+    <div class="form-group">
+      <label>Tempo que joga:</label>
+      <label for="playerPoints">{{player.dias_jogados}}</label>
+    </div>
   </form>
 </div>

@@ -1,0 +1,14 @@
+.titulo{
+  display: flex;
+  flex-direction: row;
+}
+
+.botao_fechar{
+  display: flex;
+  margin-left: 5%;
+}
+
+.close{
+  border-radius: 10px;
+  border-color: #993399;
+}

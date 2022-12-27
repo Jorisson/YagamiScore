@@ -10,7 +10,7 @@ const routes: Routes = [
   {path:'', component: HomeComponent},
   {path:'score', component: FormAddScoreComponent},
   {path:'ranking', component: PageRankingComponent},
-  {path:'player', component: PagePlayerComponent}
+  {path:'player/:name', component: PagePlayerComponent}
 ];
 
 @NgModule({

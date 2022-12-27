@@ -1,6 +1,7 @@
 *{
   background-color: #333;
   color: white;
+  z-index: 0;
 }
 
 .titulo{
@@ -19,6 +20,7 @@ form{
   transform: translate(-50%, -50%);
   border: 1px solid #993399;
   padding: 10px;
+  z-index: 0;
 }
 .form-group {
   display: flex;

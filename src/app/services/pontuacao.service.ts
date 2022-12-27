@@ -10,8 +10,7 @@ import { Pontuacao } from '../model/Pontuacao'
 })
 export class PontuacaoService {
   private baseUrlApi = environment.baseApiUrl;
-  //private apiUrl = `${this.baseUrlApi}"https://localhost:7233/Player"`;
-  private apiUrl = "https://localhost:7233/Player";
+  private apiUrl = `${this.baseUrlApi}/Player`;
 
   constructor(private http: HttpClient) { }
 
